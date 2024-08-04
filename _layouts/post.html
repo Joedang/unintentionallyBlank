@@ -8,6 +8,8 @@ layout: default
                     | append: page.splash.src 
                     | replace: '//', '/'
                 }}" alt="{{ page.splash.alt }}" title="{{ page.splash.alt }}">
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date: "%Y-%m-%d" }}</time>
+    <em>{{ page.splash.alt }}</em>
+
+
   {{ content }}
 </article>

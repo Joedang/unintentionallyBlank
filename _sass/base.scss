@@ -91,6 +91,14 @@ header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #666;
+  margin-bottom: 0;
+}
+
+header h3 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  color: #666;
 }
 
 /* Main Content
@@ -111,9 +119,13 @@ p img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1em;
 //    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.9),
 //                 0 0 5px rgba(0, 0, 0, 0.2),
 //                 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article img {
+    border-radius: 1em;
 }
 img + em {
     // Jenky captions
@@ -295,6 +307,14 @@ a:active, a:focus {
 .cf {
   zoom:1;
 }
+
+/* MathJax
+mjx-container {
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
 
 /* Make footer stick to bottom */
 

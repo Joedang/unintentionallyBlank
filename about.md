@@ -10,9 +10,9 @@ page.](https://joedang.github.io/)
 This blog is mostly an open journal about... whatever I feel like. 
 
 You're in the right place if you like:  
-- rockets and other space things,
 - prototyping and rapid manufacturing,
-- ramblings and musings,
-- and hating on zoomer software paradigms.
+- philosophical ramblings and musings,
+- art for the sake of art,
+- and hating on carpet-bagger software paradigms.
 
 If you're the good kind of weirdo, [shoot me an email](mailto:{{ site.author.email }}) and say hi. 😁

@@ -6,6 +6,14 @@
     {% if page.title %}
     <h2>{{ page.title }}</h2>
     {% endif %}
+    {% if page.date %}
+    <h3>
+      published <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">
+        {{ page.date | date: "%Y-%m-%d" }}
+      </time>
+    </h3>
+    
+    {% endif %}
     <div class="header-links">
       {% include links.html %}
     </div>

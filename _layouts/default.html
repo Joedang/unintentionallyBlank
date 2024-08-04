@@ -6,6 +6,31 @@
   <div id="wrapper">
     {% include header.html %}
     <div class="container">
+      {% if page.mathjax == true %}
+        <script 
+            type="text/javascript"
+            id="MathJax-script"
+            async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+            onload="hide_mathjax_blurb();">
+        </script>
+        <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        function hide_mathjax_blurb() {
+            el = document.getElementById("mathjax_blurb");
+            el.style.display = "none";
+        }
+        </script>
+        <p id="mathjax_blurb">
+          This page relies on a <a href="https://docs.mathjax.org/en/latest/basic/mathjax.html">MathJax</a>
+          script served from <a href="jsdelivr.net">jsdelivr.net</a> to render math.
+          So, you'll need to enable scripts from that domain to view it as intended.
+          (Either that, or you need to know how to read <a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX</a>!)
+        </p>
+      {% endif %}
       <section id="main_content">
         {{ content }}
       </section>
